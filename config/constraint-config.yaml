@@ -1,0 +1,226 @@
+# MCP接口验证组件 - 约束配置文件
+# 版本: 1.0.0
+
+version: "1.0.0"
+
+# 全局配置
+global:
+  defaultLanguage: "auto"  # 'zh' | 'en' | 'auto'
+  defaultTemplateType: "default"  # 'default' | 'strict' | 'custom'
+  enableAutoDetection: true
+  maxSessionDuration: 86400000  # 24小时 (毫秒)
+  supportedCommands:
+    - ".use interface"
+    - ".使用接口"
+    - ".apply constraints"
+  enableLogging: true
+
+# 约束模板配置
+templates:
+  # 默认模板
+  default:
+    templateType: "default"
+    language: "auto"
+    includeProjectContext: true
+    customRules: []
+    strictMode: false
+    maxConstraintLength: 2000
+
+  # 严格模式模板
+  strict:
+    templateType: "strict"
+    language: "auto"
+    includeProjectContext: true
+    customRules:
+      - "必须包含完整的错误处理"
+      - "必须包含输入验证"
+      - "必须遵循安全最佳实践"
+    strictMode: true
+    maxConstraintLength: 3000
+
+  # API开发模板
+  api:
+    templateType: "custom"
+    language: "auto"
+    includeProjectContext: true
+    customRules:
+      - "严格遵循OpenAPI 3.0规范"
+      - "必须包含完整的请求/响应定义"
+      - "必须实现适当的HTTP状态码"
+      - "必须包含API文档注释"
+      - "必须实现请求验证中间件"
+      - "必须包含错误响应格式"
+    strictMode: true
+    maxConstraintLength: 2500
+
+  # 前端开发模板
+  frontend:
+    templateType: "custom"
+    language: "auto"
+    includeProjectContext: true
+    customRules:
+      - "必须遵循组件化设计原则"
+      - "必须包含TypeScript类型定义"
+      - "必须实现响应式设计"
+      - "必须考虑无障碍访问性"
+      - "必须包含组件文档"
+      - "必须实现状态管理"
+    strictMode: false
+    maxConstraintLength: 2200
+
+  # 测试开发模板
+  testing:
+    templateType: "custom"
+    language: "auto"
+    includeProjectContext: true
+    customRules:
+      - "必须包含单元测试"
+      - "必须包含集成测试"
+      - "必须达到80%以上的代码覆盖率"
+      - "必须包含边界条件测试"
+      - "必须包含性能测试"
+      - "必须包含错误场景测试"
+    strictMode: true
+    maxConstraintLength: 2800
+
+  # 数据库开发模板
+  database:
+    templateType: "custom"
+    language: "auto"
+    includeProjectContext: true
+    customRules:
+      - "必须包含数据库迁移脚本"
+      - "必须包含索引优化"
+      - "必须实现事务处理"
+      - "必须包含数据验证"
+      - "必须考虑数据安全性"
+      - "必须包含备份恢复策略"
+    strictMode: true
+    maxConstraintLength: 2600
+
+  # 微服务开发模板
+  microservice:
+    templateType: "custom"
+    language: "auto"
+    includeProjectContext: true
+    customRules:
+      - "必须实现服务发现机制"
+      - "必须包含健康检查端点"
+      - "必须实现熔断器模式"
+      - "必须包含分布式追踪"
+      - "必须实现配置中心集成"
+      - "必须包含监控指标"
+    strictMode: true
+    maxConstraintLength: 3200
+
+  # 安全开发模板
+  security:
+    templateType: "custom"
+    language: "auto"
+    includeProjectContext: true
+    customRules:
+      - "必须实现身份认证"
+      - "必须实现权限控制"
+      - "必须防范SQL注入"
+      - "必须防范XSS攻击"
+      - "必须实现CSRF保护"
+      - "必须包含安全审计日志"
+      - "必须实现数据加密"
+    strictMode: true
+    maxConstraintLength: 3500
+
+# AI工具配置
+aiTools:
+  cursor:
+    enabled: true
+    priority: 1
+    customPrompts:
+      activation: "🔒 Cursor IDE约束模式已激活"
+      deactivation: "✅ Cursor IDE约束模式已停用"
+    integrationSettings:
+      timeout: 30000
+      retryAttempts: 3
+      fallbackBehavior: "default"
+
+  windsurf:
+    enabled: true
+    priority: 2
+    customPrompts:
+      activation: "🔒 Windsurf约束模式已激活"
+      deactivation: "✅ Windsurf约束模式已停用"
+    integrationSettings:
+      timeout: 30000
+      retryAttempts: 3
+      fallbackBehavior: "default"
+
+  trae:
+    enabled: true
+    priority: 3
+    customPrompts:
+      activation: "🔒 Trae约束模式已激活"
+      deactivation: "✅ Trae约束模式已停用"
+    integrationSettings:
+      timeout: 30000
+      retryAttempts: 3
+      fallbackBehavior: "default"
+
+  augment:
+    enabled: true
+    priority: 4
+    customPrompts:
+      activation: "🔒 Augment约束模式已激活"
+      deactivation: "✅ Augment约束模式已停用"
+    integrationSettings:
+      timeout: 30000
+      retryAttempts: 3
+      fallbackBehavior: "default"
+
+# 项目特定配置（可选）
+project:
+  apiBasePath: "/api/v1"
+  authenticationMethod: "JWT"
+  responseFormat:
+    success:
+      status: "success"
+      data: "{{data}}"
+    error:
+      status: "error"
+      message: "{{message}}"
+      code: "{{code}}"
+  customConstraints:
+    - "所有API端点必须包含版本号"
+    - "必须使用统一的错误响应格式"
+    - "必须实现请求限流"
+  excludedPaths:
+    - "/health"
+    - "/metrics"
+    - "/docs"
+  strictMode: true
+  projectName: "MCP Interface Validator"
+  version: "1.0.0"
+
+# 自定义配置（可选）
+custom:
+  # 开发环境特定设置
+  development:
+    enableDebugMode: true
+    enableVerboseLogging: true
+    enableHotReload: true
+  
+  # 生产环境特定设置
+  production:
+    enableDebugMode: false
+    enableVerboseLogging: false
+    enablePerformanceMonitoring: true
+  
+  # 团队协作设置
+  collaboration:
+    enableCodeReview: true
+    enableAutomaticFormatting: true
+    enableLinting: true
+    
+  # 质量保证设置
+  quality:
+    minCodeCoverage: 80
+    enableStaticAnalysis: true
+    enableSecurityScanning: true

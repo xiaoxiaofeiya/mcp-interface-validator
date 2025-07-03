@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mcp-interface-validator": {
+      "command": "npx",
+      "args": ["mcp-interface-validator"],
+      "env": {
+        "NODE_ENV": "production",
+        "CONSTRAINT_CONFIG_PATH": "./config/constraint-config.yaml"
+      }
+    }
+  }
+}

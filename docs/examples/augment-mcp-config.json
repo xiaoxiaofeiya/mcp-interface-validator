@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "mcp-interface-validator": {
+      "command": "npx",
+      "args": ["mcp-interface-validator"],
+      "env": {
+        "NODE_ENV": "production",
+        "CONSTRAINT_CONFIG_PATH": "./config/constraint-config.yaml"
+      }
+    }
+  },
+  "intelligentConstraints": {
+    "enabled": true,
+    "autoActivation": true,
+    "defaultTemplate": "default",
+    "supportedCommands": [
+      ".use interface",
+      ".使用接口",
+      ".apply constraints",
+      ".应用约束"
+    ],
+    "augmentSpecific": {
+      "codebaseAnalysis": true,
+      "contextAwareValidation": true,
+      "semanticUnderstanding": true
+    }
+  },
+  "usage": {
+    "basicCommands": [
+      "在Augment中输入 '.use interface' 激活智能约束",
+      "支持代码库分析和上下文感知验证",
+      "系统会自动分析您的指令并应用合适的约束模板"
+    ],
+    "examples": [
+      {
+        "scenario": "重构现有代码",
+        "command": ".use interface",
+        "instruction": "重构用户认证模块",
+        "expectedResult": "自动应用重构模板，保持接口兼容性"
+      },
+      {
+        "scenario": "优化性能",
+        "command": ".使用接口",
+        "instruction": "优化数据库查询性能",
+        "expectedResult": "自动应用性能优化模板，确保最佳实践"
+      }
+    ]
+  }
+}

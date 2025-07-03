@@ -1,0 +1,158 @@
+{
+  "version": "1.0.0",
+  "global": {
+    "defaultLanguage": "auto",
+    "defaultTemplateType": "default",
+    "enableAutoDetection": true,
+    "maxSessionDuration": 86400000,
+    "supportedCommands": [
+      ".use interface",
+      ".使用接口",
+      ".apply constraints"
+    ],
+    "enableLogging": true
+  },
+  "templates": {
+    "default": {
+      "templateType": "default",
+      "language": "auto",
+      "includeProjectContext": true,
+      "customRules": [],
+      "strictMode": false,
+      "maxConstraintLength": 2000
+    },
+    "strict": {
+      "templateType": "strict",
+      "language": "auto",
+      "includeProjectContext": true,
+      "customRules": [
+        "必须包含完整的错误处理",
+        "必须包含输入验证",
+        "必须遵循安全最佳实践"
+      ],
+      "strictMode": true,
+      "maxConstraintLength": 3000
+    },
+    "api": {
+      "templateType": "custom",
+      "language": "auto",
+      "includeProjectContext": true,
+      "customRules": [
+        "严格遵循OpenAPI 3.0规范",
+        "必须包含完整的请求/响应定义",
+        "必须实现适当的HTTP状态码",
+        "必须包含API文档注释"
+      ],
+      "strictMode": true,
+      "maxConstraintLength": 2500
+    },
+    "frontend": {
+      "templateType": "custom",
+      "language": "auto",
+      "includeProjectContext": true,
+      "customRules": [
+        "必须遵循组件化设计原则",
+        "必须包含TypeScript类型定义",
+        "必须实现响应式设计",
+        "必须考虑无障碍访问性"
+      ],
+      "strictMode": false,
+      "maxConstraintLength": 2200
+    },
+    "testing": {
+      "templateType": "custom",
+      "language": "auto",
+      "includeProjectContext": true,
+      "customRules": [
+        "必须包含单元测试",
+        "必须包含集成测试",
+        "必须达到80%以上的代码覆盖率",
+        "必须包含边界条件测试"
+      ],
+      "strictMode": true,
+      "maxConstraintLength": 2800
+    }
+  },
+  "aiTools": {
+    "cursor": {
+      "enabled": true,
+      "priority": 1,
+      "customPrompts": {
+        "activation": "🔒 Cursor IDE约束模式已激活",
+        "deactivation": "✅ Cursor IDE约束模式已停用"
+      },
+      "integrationSettings": {
+        "timeout": 30000,
+        "retryAttempts": 3,
+        "fallbackBehavior": "default"
+      }
+    },
+    "windsurf": {
+      "enabled": true,
+      "priority": 2,
+      "customPrompts": {
+        "activation": "🔒 Windsurf约束模式已激活",
+        "deactivation": "✅ Windsurf约束模式已停用"
+      },
+      "integrationSettings": {
+        "timeout": 30000,
+        "retryAttempts": 3,
+        "fallbackBehavior": "default"
+      }
+    },
+    "trae": {
+      "enabled": true,
+      "priority": 3,
+      "customPrompts": {
+        "activation": "🔒 Trae约束模式已激活",
+        "deactivation": "✅ Trae约束模式已停用"
+      },
+      "integrationSettings": {
+        "timeout": 30000,
+        "retryAttempts": 3,
+        "fallbackBehavior": "default"
+      }
+    },
+    "augment": {
+      "enabled": true,
+      "priority": 4,
+      "customPrompts": {
+        "activation": "🔒 Augment约束模式已激活",
+        "deactivation": "✅ Augment约束模式已停用"
+      },
+      "integrationSettings": {
+        "timeout": 30000,
+        "retryAttempts": 3,
+        "fallbackBehavior": "default"
+      }
+    }
+  },
+  "project": {
+    "apiBasePath": "/api/v1",
+    "authenticationMethod": "JWT",
+    "responseFormat": {
+      "success": {
+        "status": "success",
+        "data": "{{data}}"
+      },
+      "error": {
+        "status": "error",
+        "message": "{{message}}",
+        "code": "{{code}}"
+      }
+    },
+    "customConstraints": [
+      "所有API端点必须包含版本号",
+      "必须使用统一的错误响应格式",
+      "必须实现请求限流"
+    ],
+    "excludedPaths": [
+      "/health",
+      "/metrics",
+      "/docs"
+    ],
+    "strictMode": true,
+    "projectName": "MCP Interface Validator",
+    "version": "1.0.0"
+  }
+}
