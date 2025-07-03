@@ -4,8 +4,8 @@
  * Handles discovery and validation of plugins in configured directories
  */
 import { EventEmitter } from 'events';
-import type { PluginDiscoveryResult, PluginManifest, PluginLoaderConfig } from './types';
-import { Logger } from '../../utils/logger/index';
+import type { PluginDiscoveryResult, PluginManifest, PluginLoaderConfig } from './types.js';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Plugin discovery service
  */

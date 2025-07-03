@@ -8,7 +8,7 @@ import { promises as fs } from 'fs';
 import * as path from 'path';
 import { exec } from 'child_process';
 import { promisify } from 'util';
-import type { Logger } from '../../../utils/logger';
+import type { Logger } from '../../../utils/logger/index.js';
 import type {
   GitProvider as IGitProvider,
   GitProviderConfig,
@@ -16,7 +16,7 @@ import type {
   BranchInfo,
   ConflictResolution,
   GitCommit
-} from '../types';
+} from '../types.js';
 
 const execAsync = promisify(exec);
 

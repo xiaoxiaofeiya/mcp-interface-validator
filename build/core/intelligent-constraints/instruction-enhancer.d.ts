@@ -1,10 +1,10 @@
 /**
  * 指令增强器 - 增强用户指令并注入约束
  */
-import type { UserIntent } from '../intelligent-context/types';
-import { IntelligentContextAnalyzer } from '../intelligent-context';
-import type { EnhancedInstruction, EnhanceOptions, ConstraintApplicationResult, ConstraintConfig, ProjectContext } from './types';
-import type { IConstraintTemplateEngine } from './constraint-template-engine';
+import type { UserIntent } from '../intelligent-context/types.js';
+import { IntelligentContextAnalyzer } from '../intelligent-context/index.js';
+import type { EnhancedInstruction, EnhanceOptions, ConstraintApplicationResult, ConstraintConfig, ProjectContext } from './types.js';
+import type { IConstraintTemplateEngine } from './constraint-template-engine.js';
 /**
  * 指令增强器接口
  */

@@ -2,7 +2,7 @@
  * 约束管理器 - 管理约束状态和会话
  */
 
-import { Logger } from '../../utils/logger';
+import { Logger } from '../../utils/logger/index.js';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { dirname } from 'path';
 import { mkdirSync } from 'fs';
@@ -13,7 +13,7 @@ import type {
   SessionState,
   ConstraintStats,
   ProjectConstraintConfig
-} from './types';
+} from './types.js';
 
 /**
  * 配置文件格式

@@ -2,8 +2,8 @@
  * Tests for Query Builder
  */
 
-import { QueryBuilder, createQuery, QueryPresets } from '../query-builder';
-import type { HistoryQuery } from '../types';
+import { QueryBuilder, createQuery, QueryPresets } from '../query-builder.js';
+import type { HistoryQuery } from '../types.js';
 
 describe('QueryBuilder', () => {
   let queryBuilder: QueryBuilder;

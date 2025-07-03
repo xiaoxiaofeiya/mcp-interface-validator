@@ -3,7 +3,7 @@
  *
  * Main entry point for automatic API documentation generation system
  */
-import type { DocumentationConfig, GeneratedDocumentation } from './types';
+import type { DocumentationConfig, GeneratedDocumentation } from './types.js';
 export declare class DocumentationGenerator {
     private logger;
     private specParser;
@@ -52,7 +52,7 @@ export declare class DocumentationGenerator {
      */
     private createDocumentationError;
 }
-export * from './types';
-export { TemplateManager } from './template-manager';
-export { CodeExampleGenerator } from './code-example-generator';
+export * from './types.js';
+export { TemplateManager } from './template-manager.js';
+export { CodeExampleGenerator } from './code-example-generator.js';
 //# sourceMappingURL=index.d.ts.map

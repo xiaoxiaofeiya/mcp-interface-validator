@@ -7,7 +7,7 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 import * as zlib from 'zlib';
 import { promisify } from 'util';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 const gzip = promisify(zlib.gzip);
 /**
  * Export manager for validation history

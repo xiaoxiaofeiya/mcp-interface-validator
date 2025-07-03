@@ -1,7 +1,7 @@
 /**
  * 约束模板引擎 - 生成约束提示词模板
  */
-import { Logger } from '../../utils/logger';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * 约束模板引擎实现
  */

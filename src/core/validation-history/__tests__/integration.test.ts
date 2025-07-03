@@ -9,14 +9,14 @@ import {
   HistoryConfigPresets,
   HistoryUtils,
   DEFAULT_HISTORY_CONFIG
-} from '../index';
+} from '../index.js';
 import type {
   ValidationHistoryEntry,
   HistoryConfig,
   ExportOptions,
   CleanupOptions
-} from '../types';
-import type { ValidationResult } from '../../validation/index';
+} from '../types.js';
+import type { ValidationResult } from '../../validation/index.js';
 
 describe('Validation History System Integration', () => {
   let testDbPath: string;

@@ -9,8 +9,8 @@ import type {
   RecoveryOperation,
   RecoveryContext,
   IRetryManager
-} from './types';
-import { RetryStrategy, ErrorCategory } from './types';
+} from './types.js';
+import { RetryStrategy, ErrorCategory } from './types.js';
 
 /**
  * Retry manager implementation

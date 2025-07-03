@@ -7,13 +7,13 @@
 import { readFileSync, existsSync } from 'fs';
 import { join, resolve } from 'path';
 import Handlebars from 'handlebars';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 import type { 
   TemplateConfig, 
   TemplateData, 
   TemplateHelpers,
   DocumentationError 
-} from './types';
+} from './types.js';
 
 export class TemplateManager {
   private logger: Logger;

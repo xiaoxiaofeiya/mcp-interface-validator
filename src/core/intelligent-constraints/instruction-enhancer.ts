@@ -2,17 +2,17 @@
  * 指令增强器 - 增强用户指令并注入约束
  */
 
-import { Logger } from '../../utils/logger';
-import type { UserIntent } from '../intelligent-context/types';
-import { IntelligentContextAnalyzer } from '../intelligent-context';
+import { Logger } from '../../utils/logger/index.js';
+import type { UserIntent } from '../intelligent-context/types.js';
+import { IntelligentContextAnalyzer } from '../intelligent-context/index.js';
 import type {
   EnhancedInstruction,
   EnhanceOptions,
   ConstraintApplicationResult,
   ConstraintConfig,
   ProjectContext
-} from './types';
-import type { IConstraintTemplateEngine } from './constraint-template-engine';
+} from './types.js';
+import type { IConstraintTemplateEngine } from './constraint-template-engine.js';
 
 /**
  * 指令增强器接口

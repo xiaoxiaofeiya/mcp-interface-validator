@@ -3,7 +3,7 @@
  *
  * Generates code examples in multiple programming languages for API operations
  */
-import type { CodeExampleConfig, OperationData, CodeExample } from './types';
+import type { CodeExampleConfig, OperationData, CodeExample } from './types.js';
 export declare class CodeExampleGenerator {
     private logger;
     constructor();

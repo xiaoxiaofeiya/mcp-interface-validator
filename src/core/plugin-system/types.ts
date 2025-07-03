@@ -5,7 +5,7 @@
  */
 
 import { EventEmitter } from 'events';
-import type { Logger } from '../../utils/logger/index';
+import type { Logger } from '../../utils/logger/index.js';
 
 /**
  * Plugin lifecycle states

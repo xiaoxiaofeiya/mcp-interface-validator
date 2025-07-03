@@ -16,14 +16,14 @@ import type {
   StateCheckpoint,
   IRecoveryManager,
   RetryConfig
-} from './types';
-import { RecoveryAction } from './types';
-import { ErrorClassifier } from './error-classifier';
-import { RetryManager } from './retry-manager';
-import { CircuitBreaker } from './circuit-breaker';
-import { StateManager } from './state-manager';
-import { MetricsCollector } from './metrics-collector';
-import { Logger } from '../../utils/logger/index';
+} from './types.js';
+import { RecoveryAction } from './types.js';
+import { ErrorClassifier } from './error-classifier.js';
+import { RetryManager } from './retry-manager.js';
+import { CircuitBreaker } from './circuit-breaker.js';
+import { StateManager } from './state-manager.js';
+import { MetricsCollector } from './metrics-collector.js';
+import { Logger } from '../../utils/logger/index.js';
 
 /**
  * Recovery manager implementation

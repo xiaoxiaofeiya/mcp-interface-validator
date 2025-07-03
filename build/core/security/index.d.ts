@@ -9,7 +9,7 @@
  * - Rate limiting and access control
  */
 import { EventEmitter } from 'events';
-import { Logger } from '../../utils/logger';
+import { Logger } from '../../utils/logger/index.js';
 export interface SecurityConfig {
     authentication: {
         enabled: boolean;

@@ -12,7 +12,7 @@ import type {
   CleanupOptions,
   CleanupResult,
   DatabaseConfig
-} from '../types';
+} from '../types.js';
 
 /**
  * Database interface for validation history storage

@@ -4,8 +4,8 @@
  * Central management system for plugin lifecycle and coordination
  */
 import { EventEmitter } from 'events';
-import type { IPluginManager, IPlugin, PluginDiscoveryResult, PluginLoadResult, PluginLoaderConfig, PluginState, PluginManagerStats, PluginManifest } from './types';
-import { Logger } from '../../utils/logger/index';
+import type { IPluginManager, IPlugin, PluginDiscoveryResult, PluginLoadResult, PluginLoaderConfig, PluginState, PluginManagerStats, PluginManifest } from './types.js';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Plugin manager implementation
  */

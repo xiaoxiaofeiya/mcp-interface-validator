@@ -1,6 +1,6 @@
-import { createValidationHistorySystem, HistoryManager } from '../index';
-import { SQLiteDatabase } from '../database/sqlite-database';
-import { ValidationResult } from '../../validation/index';
+import { createValidationHistorySystem, HistoryManager } from '../index.js';
+import { SQLiteDatabase } from '../database/sqlite-database.js';
+import { ValidationResult } from '../../validation/index.js';
 import * as fs from 'fs';
 import * as path from 'path';
 

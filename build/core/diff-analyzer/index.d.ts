@@ -4,9 +4,9 @@
  * Compares frontend and backend code to detect API interface mismatches,
  * including endpoints, parameters, response types, and other inconsistencies.
  */
-import { Logger } from '../../utils/logger/index';
-import { type ParsedCode } from '../code-parser/index';
-import type { ValidationConfig } from '../../utils/config/index';
+import { Logger } from '../../utils/logger/index.js';
+import { type ParsedCode } from '../code-parser/index.js';
+import type { ValidationConfig } from '../../utils/config/index.js';
 export interface DiffAnalysisRequest {
     frontendCode: string;
     backendCode: string;

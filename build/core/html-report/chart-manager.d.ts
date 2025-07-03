@@ -1,5 +1,5 @@
-import type { Logger } from '../../utils/logger';
-import type { ChartConfig, ChartData, ChartOptions, ValidationSummary, PerformanceMetrics } from './types';
+import type { Logger } from '../../utils/logger/index.js';
+import type { ChartConfig, ChartData, ChartOptions, ValidationSummary, PerformanceMetrics } from './types.js';
 /**
  * Chart Manager for HTML Report Generator
  *

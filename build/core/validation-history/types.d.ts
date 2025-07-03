@@ -3,7 +3,7 @@
  *
  * Type definitions for validation history tracking and query system
  */
-import type { ValidationResult } from '../validation/index';
+import type { ValidationResult } from '../validation/index.js';
 /**
  * Validation history entry
  */

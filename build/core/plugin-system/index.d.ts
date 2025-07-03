@@ -3,14 +3,14 @@
  *
  * Exports all plugin system components and provides factory functions
  */
-export type { IPlugin, IPluginManager, PluginMetadata, PluginState, PluginContext, PluginConfig, PluginManifest, PluginHealth, PluginAPI, PluginDiscoveryResult, PluginLoadResult, PluginLoaderConfig, PluginManagerStats, PluginEvents, PluginDependency, PluginPriority, HookType, HookHandler, HookContext } from './types';
-export { BasePlugin, SimplePlugin } from './base-plugin';
-export { PluginDiscovery } from './plugin-discovery';
-export { PluginLoader } from './plugin-loader';
-export { PluginManager } from './plugin-manager';
-import type { PluginLoaderConfig } from './types';
-import { PluginManager } from './plugin-manager';
-import { Logger } from '../../utils/logger/index';
+export type { IPlugin, IPluginManager, PluginMetadata, PluginState, PluginContext, PluginConfig, PluginManifest, PluginHealth, PluginAPI, PluginDiscoveryResult, PluginLoadResult, PluginLoaderConfig, PluginManagerStats, PluginEvents, PluginDependency, PluginPriority, HookType, HookHandler, HookContext } from './types.js';
+export { BasePlugin, SimplePlugin } from './base-plugin.js';
+export { PluginDiscovery } from './plugin-discovery.js';
+export { PluginLoader } from './plugin-loader.js';
+export { PluginManager } from './plugin-manager.js';
+import type { PluginLoaderConfig } from './types.js';
+import { PluginManager } from './plugin-manager.js';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Default plugin system configuration
  */

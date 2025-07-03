@@ -3,14 +3,14 @@
  *
  * Main entry point for the error recovery and retry system
  */
-export * from './types';
-export { ErrorClassifier, createDefaultErrorClassifier, ErrorClassifierUtils } from './error-classifier';
-export { RetryManager, RetryConfigBuilder, RetryConfigs, createRetryManager } from './retry-manager';
-export { CircuitBreaker, CircuitBreakerConfigBuilder, CircuitBreakerConfigs, createCircuitBreaker } from './circuit-breaker';
-export { StateManager, createStateManager, StateManagerUtils } from './state-manager';
-export { MetricsCollector, createMetricsCollector } from './metrics-collector';
-export { RecoveryManager, createRecoveryManager } from './recovery-manager';
-export type { ErrorCategory, ErrorSeverity, RecoveryAction, RetryStrategy, CircuitBreakerState, ErrorClassification, RetryConfig, CircuitBreakerConfig, RecoveryContext, RecoveryResult, RecoveryStats, HealthCheckResult } from './types';
+export * from './types.js';
+export { ErrorClassifier, createDefaultErrorClassifier, ErrorClassifierUtils } from './error-classifier.js';
+export { RetryManager, RetryConfigBuilder, RetryConfigs, createRetryManager } from './retry-manager.js';
+export { CircuitBreaker, CircuitBreakerConfigBuilder, CircuitBreakerConfigs, createCircuitBreaker } from './circuit-breaker.js';
+export { StateManager, createStateManager, StateManagerUtils } from './state-manager.js';
+export { MetricsCollector, createMetricsCollector } from './metrics-collector.js';
+export { RecoveryManager, createRecoveryManager } from './recovery-manager.js';
+export type { ErrorCategory, ErrorSeverity, RecoveryAction, RetryStrategy, CircuitBreakerState, ErrorClassification, RetryConfig, CircuitBreakerConfig, RecoveryContext, RecoveryResult, RecoveryStats, HealthCheckResult } from './types.js';
 /**
  * Error Recovery System Factory
  *

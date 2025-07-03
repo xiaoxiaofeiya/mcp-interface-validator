@@ -5,11 +5,11 @@
  */
 import { EventEmitter } from 'events';
 import * as crypto from 'crypto';
-import { Logger } from '../../utils/logger/index';
-import { SQLiteDatabase } from './database/sqlite-database';
-import { ExportManager } from './export-manager';
-import { CleanupManager } from './cleanup-manager';
-import { QueryBuilder } from './query-builder';
+import { Logger } from '../../utils/logger/index.js';
+import { SQLiteDatabase } from './database/sqlite-database.js';
+import { ExportManager } from './export-manager.js';
+import { CleanupManager } from './cleanup-manager.js';
+import { QueryBuilder } from './query-builder.js';
 /**
  * Main history manager class
  */

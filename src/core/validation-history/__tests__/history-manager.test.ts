@@ -2,17 +2,17 @@
  * Tests for History Manager
  */
 
-import { HistoryManager, createHistoryManager } from '../history-manager';
-import { Logger } from '../../../utils/logger/index';
+import { HistoryManager, createHistoryManager } from '../history-manager.js';
+import { Logger } from '../../../utils/logger/index.js';
 import type {
   HistoryConfig,
   ValidationHistoryEntry,
   ValidationContext,
   ValidationMetrics,
   HistoryQuery
-} from '../types';
-import type { ValidationResult } from '../../validation/index';
-import type { IHistoryDatabase } from '../database/interface';
+} from '../types.js';
+import type { ValidationResult } from '../../validation/index.js';
+import type { IHistoryDatabase } from '../database/interface.js';
 import { EventEmitter } from 'events';
 
 // Mock database implementation

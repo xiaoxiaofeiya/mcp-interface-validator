@@ -3,9 +3,9 @@
  *
  * Core validation logic for API interfaces against OpenAPI specifications
  */
-import { Logger } from '../../utils/logger/index';
-import { ConfigManager } from '../../utils/config/index';
-import { type ContextSuggestion } from '../intelligent-context/index';
+import { Logger } from '../../utils/logger/index.js';
+import { ConfigManager } from '../../utils/config/index.js';
+import { type ContextSuggestion } from '../intelligent-context/index.js';
 export interface ValidationRequest {
     code: string;
     specPath: string;

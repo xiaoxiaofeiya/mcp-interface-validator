@@ -4,7 +4,7 @@
  * Collects and aggregates error recovery metrics and statistics
  */
 import { EventEmitter } from 'events';
-import { ErrorCategory, RecoveryAction } from './types';
+import { ErrorCategory, RecoveryAction } from './types.js';
 /**
  * Metrics collector implementation
  */

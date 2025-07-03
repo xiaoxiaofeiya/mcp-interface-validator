@@ -4,7 +4,7 @@
  * Handles ambiguous user instructions and provides intelligent suggestions
  * for API interface generation and validation.
  */
-import { Logger } from '../../utils/logger';
+import { Logger } from '../../utils/logger/index.js';
 export class IntelligentContextAnalyzer {
     logger;
     commonPatterns = new Map();

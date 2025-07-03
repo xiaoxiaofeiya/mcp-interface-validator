@@ -7,8 +7,8 @@
 import type {
   ErrorClassification,
   IErrorClassifier
-} from './types';
-import { ErrorCategory, ErrorSeverity, RecoveryAction } from './types';
+} from './types.js';
+import { ErrorCategory, ErrorSeverity, RecoveryAction } from './types.js';
 
 /**
  * Classification rule

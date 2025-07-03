@@ -7,7 +7,7 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 // import { glob } from 'glob'; // Will implement simple directory scanning
 import { EventEmitter } from 'events';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Plugin discovery service
  */

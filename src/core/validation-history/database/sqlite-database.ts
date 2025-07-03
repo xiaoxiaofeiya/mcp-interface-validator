@@ -8,7 +8,7 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 
 import { EventEmitter } from 'events';
-import { Logger } from '../../../utils/logger/index';
+import { Logger } from '../../../utils/logger/index.js';
 import type {
   ValidationHistoryEntry,
   HistoryQuery,
@@ -17,12 +17,12 @@ import type {
   CleanupOptions,
   CleanupResult,
   DatabaseConfig
-} from '../types';
+} from '../types.js';
 import type {
   IHistoryDatabase,
   DatabaseHealth,
   ITransaction
-} from './interface';
+} from './interface.js';
 
 /**
  * SQLite database implementation

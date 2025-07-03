@@ -4,9 +4,9 @@
  * Manages and injects API specification context for different tech stacks
  * and development environments
  */
-import { Logger } from '../../utils/logger/index';
-import type { ValidationConfig } from '../../utils/config/index';
-import type { ParsedSpec } from '../parser/index';
+import { Logger } from '../../utils/logger/index.js';
+import type { ValidationConfig } from '../../utils/config/index.js';
+import type { ParsedSpec } from '../parser/index.js';
 export interface ContextTemplate {
     id: string;
     name: string;

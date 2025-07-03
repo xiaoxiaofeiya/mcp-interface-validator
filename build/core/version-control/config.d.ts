@@ -3,7 +3,7 @@
  *
  * This module provides configuration management for the version control system.
  */
-import type { VersionControlConfig, GitProviderConfig, FileSystemProviderConfig } from './types';
+import type { VersionControlConfig, GitProviderConfig, FileSystemProviderConfig } from './types.js';
 /**
  * Default configuration for version control system
  */

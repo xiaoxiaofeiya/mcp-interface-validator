@@ -7,7 +7,7 @@
 import { promises as fs } from 'fs';
 import * as path from 'path';
 import * as crypto from 'crypto';
-import type { Logger } from '../../../utils/logger';
+import type { Logger } from '../../../utils/logger/index.js';
 import type {
   VersionControlProvider,
   FileSystemProvider as IFileSystemProvider,
@@ -15,7 +15,7 @@ import type {
   VersionEntry,
   BranchInfo,
   ConflictResolution
-} from '../types';
+} from '../types.js';
 
 /**
  * File System Provider Implementation

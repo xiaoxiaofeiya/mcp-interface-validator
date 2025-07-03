@@ -6,7 +6,7 @@
  */
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { resolve, dirname } from 'path';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class ContextEnhancer {
     logger;
     // private _config: ValidationConfig;

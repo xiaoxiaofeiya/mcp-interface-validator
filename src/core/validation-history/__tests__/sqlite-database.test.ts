@@ -4,15 +4,15 @@
 
 import * as fs from 'fs/promises';
 import * as path from 'path';
-import { SQLiteDatabase } from '../database/sqlite-database';
-import { Logger } from '../../../utils/logger/index';
+import { SQLiteDatabase } from '../database/sqlite-database.js';
+import { Logger } from '../../../utils/logger/index.js';
 import type {
   ValidationHistoryEntry,
   HistoryQuery,
   CleanupOptions,
   DatabaseConfig
-} from '../types';
-import type { ValidationResult } from '../../validation/index';
+} from '../types.js';
+import type { ValidationResult } from '../../validation/index.js';
 
 // Mock sqlite3 module
 const mockSqlite3 = {

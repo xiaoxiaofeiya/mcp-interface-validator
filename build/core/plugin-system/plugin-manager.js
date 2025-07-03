@@ -4,9 +4,9 @@
  * Central management system for plugin lifecycle and coordination
  */
 import { EventEmitter } from 'events';
-import { PluginDiscovery } from './plugin-discovery';
-import { PluginLoader } from './plugin-loader';
-import { Logger } from '../../utils/logger/index';
+import { PluginDiscovery } from './plugin-discovery.js';
+import { PluginLoader } from './plugin-loader.js';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Plugin manager implementation
  */

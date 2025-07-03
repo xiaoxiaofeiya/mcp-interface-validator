@@ -5,7 +5,7 @@
  */
 
 import * as path from 'path';
-import type { VersionControlConfig, GitProviderConfig, FileSystemProviderConfig } from './types';
+import type { VersionControlConfig, GitProviderConfig, FileSystemProviderConfig } from './types.js';
 
 /**
  * Default configuration for version control system

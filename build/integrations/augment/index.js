@@ -3,7 +3,7 @@
  *
  * Integration adapter for Augment AI development platform
  */
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class AugmentIntegration {
     name = 'augment';
     isEnabled;

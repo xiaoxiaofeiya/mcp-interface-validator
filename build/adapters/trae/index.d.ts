@@ -5,9 +5,9 @@
  * API interface validation and context injection using MCP protocol.
  */
 import { EventEmitter } from 'events';
-import { ValidationEngine } from '../../core/validation';
-import { ContextEnhancer } from '../../core/context';
-import { SpecParser } from '../../core/parser';
+import { ValidationEngine } from '../../core/validation/index.js';
+import { ContextEnhancer } from '../../core/context/index.js';
+import { SpecParser } from '../../core/parser/index.js';
 export interface TraeAdapterConfig {
     enableRealTimeValidation: boolean;
     contextInjectionMode: 'auto' | 'manual' | 'disabled';

@@ -1,6 +1,6 @@
 import * as Handlebars from 'handlebars';
-import type { Logger } from '../../utils/logger';
-import type { ReportTemplate } from './types';
+import type { Logger } from '../../utils/logger/index.js';
+import type { ReportTemplate } from './types.js';
 /**
  * Template Manager for HTML Report Generator
  *

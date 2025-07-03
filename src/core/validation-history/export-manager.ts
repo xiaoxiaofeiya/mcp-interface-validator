@@ -9,14 +9,14 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 import * as zlib from 'zlib';
 import { promisify } from 'util';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 import type {
   ValidationHistoryEntry,
   HistoryQuery,
   ExportOptions,
   ExportResult
-} from './types';
-import type { IHistoryDatabase } from './database/interface';
+} from './types.js';
+import type { IHistoryDatabase } from './database/interface.js';
 
 const gzip = promisify(zlib.gzip);
 

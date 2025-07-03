@@ -4,14 +4,14 @@
 
 import * as fs from 'fs/promises';
 import * as path from 'path';
-import { ExportManager } from '../export-manager';
-import { Logger } from '../../../utils/logger/index';
+import { ExportManager } from '../export-manager.js';
+import { Logger } from '../../../utils/logger/index.js';
 import type {
   ExportOptions,
   ValidationHistoryEntry,
   HistoryConfig
-} from '../types';
-import type { IHistoryDatabase } from '../database/interface';
+} from '../types.js';
+import type { IHistoryDatabase } from '../database/interface.js';
 
 // Mock file system operations
 jest.mock('fs/promises');

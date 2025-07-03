@@ -10,7 +10,7 @@ import { extname } from 'path';
 import { parse as babelParse } from '@babel/parser';
 import traverse from '@babel/traverse';
 import * as t from '@babel/types';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Multi-language code parser
  */

@@ -3,7 +3,7 @@
  *
  * Generates code examples in multiple programming languages for API operations
  */
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class CodeExampleGenerator {
     logger;
     constructor() {

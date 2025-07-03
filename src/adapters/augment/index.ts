@@ -7,12 +7,12 @@
  */
 
 import { EventEmitter } from 'events';
-import { Logger } from '../../utils/logger/index';
-import { ValidationEngine } from '../../core/validation';
-import type { ValidationResult as CoreValidationResult } from '../../core/validation';
-import { ContextEnhancer } from '../../core/context';
-import { SpecParser } from '../../core/parser';
-import { ConfigManager } from '../../utils/config';
+import { Logger } from '../../utils/logger/index.js';
+import { ValidationEngine } from '../../core/validation/index.js';
+import type { ValidationResult as CoreValidationResult } from '../../core/validation/index.js';
+import { ContextEnhancer } from '../../core/context/index.js';
+import { SpecParser } from '../../core/parser/index.js';
+import { ConfigManager } from '../../utils/config/index.js';
 
 export interface AugmentAdapterConfig {
   enableRealTimeValidation: boolean;

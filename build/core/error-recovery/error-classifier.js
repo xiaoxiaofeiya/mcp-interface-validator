@@ -3,7 +3,7 @@
  *
  * Classifies errors by category, severity, and recovery recommendations
  */
-import { ErrorCategory, ErrorSeverity, RecoveryAction } from './types';
+import { ErrorCategory, ErrorSeverity, RecoveryAction } from './types.js';
 /**
  * Default error classifier implementation
  */

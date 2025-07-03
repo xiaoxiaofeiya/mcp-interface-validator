@@ -9,8 +9,8 @@ import type {
   ErrorClassification,
   RecoveryStats,
   IMetricsCollector
-} from './types';
-import { ErrorCategory, RecoveryAction } from './types';
+} from './types.js';
+import { ErrorCategory, RecoveryAction } from './types.js';
 
 /**
  * Operation metric

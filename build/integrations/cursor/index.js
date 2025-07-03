@@ -3,7 +3,7 @@
  *
  * Integration adapter for Cursor AI IDE
  */
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class CursorIntegration {
     name = 'cursor';
     isEnabled;

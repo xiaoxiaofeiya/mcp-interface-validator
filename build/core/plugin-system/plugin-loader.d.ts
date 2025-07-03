@@ -4,8 +4,8 @@
  * Handles dynamic loading and lifecycle management of plugins
  */
 import { EventEmitter } from 'events';
-import type { IPlugin, PluginLoadResult, PluginDiscoveryResult, PluginLoaderConfig, PluginAPI } from './types';
-import { Logger } from '../../utils/logger/index';
+import type { IPlugin, PluginLoadResult, PluginDiscoveryResult, PluginLoaderConfig, PluginAPI } from './types.js';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Plugin loader implementation
  */

@@ -3,11 +3,11 @@
  *
  * Core validation logic for API interfaces against OpenAPI specifications
  */
-import { Logger } from '../../utils/logger/index';
-import { ConfigManager } from '../../utils/config/index';
-import { SchemaValidator } from '../schema/index';
-import { FileMonitor } from '../monitoring/index';
-import { IntelligentContextAnalyzer } from '../intelligent-context/index';
+import { Logger } from '../../utils/logger/index.js';
+import { ConfigManager } from '../../utils/config/index.js';
+import { SchemaValidator } from '../schema/index.js';
+import { FileMonitor } from '../monitoring/index.js';
+import { IntelligentContextAnalyzer } from '../intelligent-context/index.js';
 export class ValidationEngine {
     logger;
     config;

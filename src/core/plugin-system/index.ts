@@ -25,18 +25,18 @@ export type {
   HookType,
   HookHandler,
   HookContext
-} from './types';
+} from './types.js';
 
 // Core classes
-export { BasePlugin, SimplePlugin } from './base-plugin';
-export { PluginDiscovery } from './plugin-discovery';
-export { PluginLoader } from './plugin-loader';
-export { PluginManager } from './plugin-manager';
+export { BasePlugin, SimplePlugin } from './base-plugin.js';
+export { PluginDiscovery } from './plugin-discovery.js';
+export { PluginLoader } from './plugin-loader.js';
+export { PluginManager } from './plugin-manager.js';
 
 // Re-export types for convenience
-import type { PluginLoaderConfig } from './types';
-import { PluginManager } from './plugin-manager';
-import { Logger } from '../../utils/logger/index';
+import type { PluginLoaderConfig } from './types.js';
+import { PluginManager } from './plugin-manager.js';
+import { Logger } from '../../utils/logger/index.js';
 
 /**
  * Default plugin system configuration

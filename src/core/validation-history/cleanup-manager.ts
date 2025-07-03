@@ -5,13 +5,13 @@
  */
 
 import { EventEmitter } from 'events';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 import type {
   CleanupOptions,
   CleanupResult,
   HistoryConfig
-} from './types';
-import type { IHistoryDatabase } from './database/interface';
+} from './types.js';
+import type { IHistoryDatabase } from './database/interface.js';
 
 /**
  * Cleanup manager for validation history

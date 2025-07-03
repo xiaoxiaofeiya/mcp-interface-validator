@@ -4,11 +4,11 @@
  * Main manager class that coordinates all validation history operations
  */
 import { EventEmitter } from 'events';
-import { Logger } from '../../utils/logger/index';
-import { QueryBuilder } from './query-builder';
-import type { ValidationHistoryEntry, HistoryQuery, HistoryQueryResult, HistoryStatistics, HistoryConfig, ValidationContext, ValidationMetrics, ExportOptions, ExportResult, CleanupOptions, CleanupResult } from './types';
-import type { ValidationResult } from '../validation/index';
-import type { IHistoryDatabase, DatabaseHealth } from './database/interface';
+import { Logger } from '../../utils/logger/index.js';
+import { QueryBuilder } from './query-builder.js';
+import type { ValidationHistoryEntry, HistoryQuery, HistoryQueryResult, HistoryStatistics, HistoryConfig, ValidationContext, ValidationMetrics, ExportOptions, ExportResult, CleanupOptions, CleanupResult } from './types.js';
+import type { ValidationResult } from '../validation/index.js';
+import type { IHistoryDatabase, DatabaseHealth } from './database/interface.js';
 /**
  * Main history manager class
  */
@@ -70,7 +70,7 @@ export declare class HistoryManager extends EventEmitter {
     /**
      * Get cleanup statistics
      */
-    getCleanupStats(): Promise<import("./cleanup-manager").CleanupStats>;
+    getCleanupStats(): Promise<import("./cleanup-manager.js").CleanupStats>;
     /**
      * Delete specific validation entries
      */

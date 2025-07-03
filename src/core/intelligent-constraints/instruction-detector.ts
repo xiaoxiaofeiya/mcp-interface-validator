@@ -2,11 +2,11 @@
  * 指令检测器 - 检测和解析约束指令
  */
 
-import { Logger } from '../../utils/logger';
+import { Logger } from '../../utils/logger/index.js';
 import type {
   ConstraintCommand,
   InstructionDetectionResult
-} from './types';
+} from './types.js';
 
 /**
  * 指令检测器接口

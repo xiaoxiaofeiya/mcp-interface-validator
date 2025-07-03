@@ -17,7 +17,7 @@ import {
   HistoryConfigPresets,
   HistoryUtils,
   DEFAULT_HISTORY_CONFIG
-} from '../index';
+} from '../index.js';
 
 import type {
   IHistoryDatabase,
@@ -34,7 +34,7 @@ import type {
   CleanupResult,
   DatabaseConfig,
   HistoryConfig
-} from '../index';
+} from '../index.js';
 
 describe('Validation History System - Main Exports', () => {
   describe('Core Classes Export', () => {

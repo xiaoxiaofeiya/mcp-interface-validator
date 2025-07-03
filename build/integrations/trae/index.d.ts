@@ -3,8 +3,8 @@
  *
  * Integration adapter for Trae AI development tool
  */
-import { Logger } from '../../utils/logger/index';
-import type { Integration, IntegrationStatus } from '../index';
+import { Logger } from '../../utils/logger/index.js';
+import type { Integration, IntegrationStatus } from '../index.js';
 export interface TraeConfig {
     enabled: boolean;
     configPath?: string;

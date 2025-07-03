@@ -4,9 +4,9 @@
  * SQLite-based storage for validation history entries
  */
 import { EventEmitter } from 'events';
-import { Logger } from '../../../utils/logger/index';
-import type { ValidationHistoryEntry, HistoryQuery, HistoryQueryResult, HistoryStatistics, CleanupOptions, CleanupResult, DatabaseConfig } from '../types';
-import type { IHistoryDatabase, DatabaseHealth } from './interface';
+import { Logger } from '../../../utils/logger/index.js';
+import type { ValidationHistoryEntry, HistoryQuery, HistoryQueryResult, HistoryStatistics, CleanupOptions, CleanupResult, DatabaseConfig } from '../types.js';
+import type { IHistoryDatabase, DatabaseHealth } from './interface.js';
 /**
  * SQLite database implementation
  */

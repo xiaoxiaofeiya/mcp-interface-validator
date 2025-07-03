@@ -2,7 +2,7 @@ import { EventEmitter } from 'events';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import * as Handlebars from 'handlebars';
-import type { Logger } from '../../utils/logger';
+import type { Logger } from '../../utils/logger/index.js';
 import type {
   HtmlReportConfig,
   ReportData,
@@ -10,7 +10,7 @@ import type {
   ExportOptions,
   ValidationSummary,
   PerformanceMetrics
-} from './types';
+} from './types.js';
 
 /**
  * HTML Report Generator

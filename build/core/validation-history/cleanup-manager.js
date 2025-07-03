@@ -4,7 +4,7 @@
  * Handles automated cleanup of old validation history entries
  */
 import { EventEmitter } from 'events';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Cleanup manager for validation history
  */

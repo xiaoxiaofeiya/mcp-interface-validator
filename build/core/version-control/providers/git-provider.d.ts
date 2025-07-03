@@ -3,8 +3,8 @@
  *
  * This provider implements version control using Git as the backend storage.
  */
-import type { Logger } from '../../../utils/logger';
-import type { GitProvider as IGitProvider, GitProviderConfig, VersionEntry, BranchInfo, ConflictResolution, GitCommit } from '../types';
+import type { Logger } from '../../../utils/logger/index.js';
+import type { GitProvider as IGitProvider, GitProviderConfig, VersionEntry, BranchInfo, ConflictResolution, GitCommit } from '../types.js';
 /**
  * Git Provider Implementation
  */

@@ -5,15 +5,15 @@
  */
 
 // Types
-export * from './types';
+export * from './types.js';
 
 // Core components
-export { ErrorClassifier, createDefaultErrorClassifier, ErrorClassifierUtils } from './error-classifier';
-export { RetryManager, RetryConfigBuilder, RetryConfigs, createRetryManager } from './retry-manager';
-export { CircuitBreaker, CircuitBreakerConfigBuilder, CircuitBreakerConfigs, createCircuitBreaker } from './circuit-breaker';
-export { StateManager, createStateManager, StateManagerUtils } from './state-manager';
-export { MetricsCollector, createMetricsCollector } from './metrics-collector';
-export { RecoveryManager, createRecoveryManager } from './recovery-manager';
+export { ErrorClassifier, createDefaultErrorClassifier, ErrorClassifierUtils } from './error-classifier.js';
+export { RetryManager, RetryConfigBuilder, RetryConfigs, createRetryManager } from './retry-manager.js';
+export { CircuitBreaker, CircuitBreakerConfigBuilder, CircuitBreakerConfigs, createCircuitBreaker } from './circuit-breaker.js';
+export { StateManager, createStateManager, StateManagerUtils } from './state-manager.js';
+export { MetricsCollector, createMetricsCollector } from './metrics-collector.js';
+export { RecoveryManager, createRecoveryManager } from './recovery-manager.js';
 
 // Re-export commonly used types for convenience
 export type {
@@ -29,7 +29,7 @@ export type {
   RecoveryResult,
   RecoveryStats,
   HealthCheckResult
-} from './types';
+} from './types.js';
 
 /**
  * Error Recovery System Factory

@@ -7,7 +7,7 @@
 
 import { EventEmitter } from 'events';
 import * as crypto from 'crypto';
-import type { Logger } from '../../utils/logger';
+import type { Logger } from '../../utils/logger/index.js';
 import type {
   VersionControlConfig,
   ApiSpecification,
@@ -17,9 +17,9 @@ import type {
   VersionDiff,
   VersionMetadata,
   VersionControlProvider
-} from './types';
-import { GitProvider } from './providers/git-provider';
-import { FileSystemProvider } from './providers/filesystem-provider';
+} from './types.js';
+import { GitProvider } from './providers/git-provider.js';
+import { FileSystemProvider } from './providers/filesystem-provider.js';
 
 /**
  * Main Version Control Manager
@@ -495,6 +495,6 @@ export class VersionControlManager extends EventEmitter {
 }
 
 // Export types and providers
-export * from './types';
-export { GitProvider } from './providers/git-provider';
-export { FileSystemProvider } from './providers/filesystem-provider';
+export * from './types.js';
+export { GitProvider } from './providers/git-provider.js';
+export { FileSystemProvider } from './providers/filesystem-provider.js';

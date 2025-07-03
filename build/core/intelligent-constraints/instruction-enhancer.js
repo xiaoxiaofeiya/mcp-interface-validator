@@ -1,8 +1,8 @@
 /**
  * 指令增强器 - 增强用户指令并注入约束
  */
-import { Logger } from '../../utils/logger';
-import { IntelligentContextAnalyzer } from '../intelligent-context';
+import { Logger } from '../../utils/logger/index.js';
+import { IntelligentContextAnalyzer } from '../intelligent-context/index.js';
 /**
  * 指令增强器实现
  */

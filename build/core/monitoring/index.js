@@ -6,7 +6,7 @@
 import { watch, FSWatcher } from 'chokidar';
 import { readFileSync, statSync } from 'fs';
 import { resolve } from 'path';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class FileMonitor {
     logger;
     config;

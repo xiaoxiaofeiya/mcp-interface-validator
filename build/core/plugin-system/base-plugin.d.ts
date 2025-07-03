@@ -4,7 +4,7 @@
  * Provides a base class for plugin development with common functionality
  */
 import { EventEmitter } from 'events';
-import type { IPlugin, PluginMetadata, PluginState, PluginContext, PluginConfig, PluginHealth, HookType, HookHandler } from './types';
+import type { IPlugin, PluginMetadata, PluginState, PluginContext, PluginConfig, PluginHealth, HookType, HookHandler } from './types.js';
 /**
  * Abstract base plugin class
  */

@@ -5,8 +5,8 @@
  * including change tracking, version comparison, rollback support, and conflict resolution.
  */
 import { EventEmitter } from 'events';
-import type { Logger } from '../../utils/logger';
-import type { VersionControlConfig, ApiSpecification, VersionEntry, ChangeSet, ConflictResolution, VersionDiff, VersionMetadata } from './types';
+import type { Logger } from '../../utils/logger/index.js';
+import type { VersionControlConfig, ApiSpecification, VersionEntry, ChangeSet, ConflictResolution, VersionDiff, VersionMetadata } from './types.js';
 /**
  * Main Version Control Manager
  */
@@ -81,7 +81,7 @@ export declare class VersionControlManager extends EventEmitter {
     private findConflicts;
     private ensureInitialized;
 }
-export * from './types';
-export { GitProvider } from './providers/git-provider';
-export { FileSystemProvider } from './providers/filesystem-provider';
+export * from './types.js';
+export { GitProvider } from './providers/git-provider.js';
+export { FileSystemProvider } from './providers/filesystem-provider.js';
 //# sourceMappingURL=index.d.ts.map

@@ -4,8 +4,8 @@
  * Fluent interface for building complex validation history queries
  */
 
-import type { HistoryQuery, ValidationHistoryEntry } from './types';
-import type { IQueryBuilder, IHistoryDatabase } from './database/interface';
+import type { HistoryQuery, ValidationHistoryEntry } from './types.js';
+import type { IQueryBuilder, IHistoryDatabase } from './database/interface.js';
 
 /**
  * Query builder implementation

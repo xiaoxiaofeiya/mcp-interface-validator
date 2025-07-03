@@ -5,11 +5,11 @@
  */
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, resolve } from 'path';
-import { Logger } from '../../utils/logger/index';
-import { SpecParser } from '../parser/index';
-import { CodeParser } from '../code-parser/index';
-import { TemplateManager } from './template-manager';
-import { CodeExampleGenerator } from './code-example-generator';
+import { Logger } from '../../utils/logger/index.js';
+import { SpecParser } from '../parser/index.js';
+import { CodeParser } from '../code-parser/index.js';
+import { TemplateManager } from './template-manager.js';
+import { CodeExampleGenerator } from './code-example-generator.js';
 export class DocumentationGenerator {
     logger;
     specParser;
@@ -330,7 +330,7 @@ export class DocumentationGenerator {
     }
 }
 // Export types and main class
-export * from './types';
-export { TemplateManager } from './template-manager';
-export { CodeExampleGenerator } from './code-example-generator';
+export * from './types.js';
+export { TemplateManager } from './template-manager.js';
+export { CodeExampleGenerator } from './code-example-generator.js';
 //# sourceMappingURL=index.js.map

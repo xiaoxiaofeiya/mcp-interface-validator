@@ -1,4 +1,4 @@
-import type { Logger } from '../../utils/logger';
+import type { Logger } from '../../utils/logger/index.js';
 import type {
   ChartConfig,
   ChartData,
@@ -6,7 +6,7 @@ import type {
   ChartOptions,
   ValidationSummary,
   PerformanceMetrics
-} from './types';
+} from './types.js';
 
 /**
  * Chart Manager for HTML Report Generator

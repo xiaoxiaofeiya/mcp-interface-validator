@@ -4,7 +4,7 @@
  * Manages state checkpoints and rollback functionality
  */
 import { EventEmitter } from 'events';
-import type { StateCheckpoint, IStateManager } from './types';
+import type { StateCheckpoint, IStateManager } from './types.js';
 /**
  * State manager implementation
  */

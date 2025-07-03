@@ -9,7 +9,7 @@ import $RefParser from '@apidevtools/json-schema-ref-parser';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import { parse as parseYaml } from 'yaml';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class SchemaValidator {
     logger;
     // @ts-ignore - TODO: Use config for validation settings

@@ -2,25 +2,25 @@
  * 智能约束系统主入口
  */
 
-export * from './types';
-export * from './constraint-manager';
-export * from './constraint-template-engine';
-export * from './instruction-detector';
-export * from './instruction-enhancer';
+export * from './types.js';
+export * from './constraint-manager.js';
+export * from './constraint-template-engine.js';
+export * from './instruction-detector.js';
+export * from './instruction-enhancer.js';
 
-import { Logger } from '../../utils/logger';
-import { IntelligentContextAnalyzer } from '../intelligent-context';
-import { ConstraintManager } from './constraint-manager';
-import { ConstraintTemplateEngine } from './constraint-template-engine';
-import { InstructionDetector } from './instruction-detector';
-import { InstructionEnhancer } from './instruction-enhancer';
+import { Logger } from '../../utils/logger/index.js';
+import { IntelligentContextAnalyzer } from '../intelligent-context/index.js';
+import { ConstraintManager } from './constraint-manager.js';
+import { ConstraintTemplateEngine } from './constraint-template-engine.js';
+import { InstructionDetector } from './instruction-detector.js';
+import { InstructionEnhancer } from './instruction-enhancer.js';
 import type {
   ConstraintConfig,
   GlobalConstraintConfig,
   ProjectContext,
   ConstraintApplicationResult,
   ConstraintCommand
-} from './types';
+} from './types.js';
 
 /**
  * 智能约束系统

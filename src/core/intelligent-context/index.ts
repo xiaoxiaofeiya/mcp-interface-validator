@@ -5,11 +5,11 @@
  * for API interface generation and validation.
  */
 
-import { Logger } from '../../utils/logger';
-import type { UserIntent } from './types';
+import { Logger } from '../../utils/logger/index.js';
+import type { UserIntent } from './types.js';
 
 // Re-export UserIntent from types.ts to maintain consistency
-export type { UserIntent } from './types';
+export type { UserIntent } from './types.js';
 
 export interface ContextSuggestion {
   suggestedEndpoints: string[];

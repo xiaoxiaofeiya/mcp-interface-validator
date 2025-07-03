@@ -3,8 +3,8 @@
  *
  * This provider implements version control using the local file system as storage.
  */
-import type { Logger } from '../../../utils/logger';
-import type { VersionControlProvider, FileSystemProvider as IFileSystemProvider, FileSystemProviderConfig, VersionEntry, BranchInfo, ConflictResolution } from '../types';
+import type { Logger } from '../../../utils/logger/index.js';
+import type { VersionControlProvider, FileSystemProvider as IFileSystemProvider, FileSystemProviderConfig, VersionEntry, BranchInfo, ConflictResolution } from '../types.js';
 /**
  * File System Provider Implementation
  */

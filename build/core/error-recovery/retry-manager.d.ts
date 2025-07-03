@@ -3,8 +3,8 @@
  *
  * Implements various retry strategies with configurable backoff algorithms
  */
-import type { RetryConfig, RecoveryOperation, RecoveryContext, IRetryManager } from './types';
-import { RetryStrategy, ErrorCategory } from './types';
+import type { RetryConfig, RecoveryOperation, RecoveryContext, IRetryManager } from './types.js';
+import { RetryStrategy, ErrorCategory } from './types.js';
 /**
  * Retry manager implementation
  */

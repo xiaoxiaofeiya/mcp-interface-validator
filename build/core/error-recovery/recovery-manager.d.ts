@@ -4,8 +4,8 @@
  * Main orchestrator for error recovery operations
  */
 import { EventEmitter } from 'events';
-import type { RecoveryManagerConfig, RecoveryStrategyConfig, RecoveryOperation, RecoveryResult, HealthCheckResult, StateCheckpoint, IRecoveryManager } from './types';
-import { RetryManager } from './retry-manager';
+import type { RecoveryManagerConfig, RecoveryStrategyConfig, RecoveryOperation, RecoveryResult, HealthCheckResult, StateCheckpoint, IRecoveryManager } from './types.js';
+import { RetryManager } from './retry-manager.js';
 /**
  * Recovery manager implementation
  */
@@ -36,7 +36,7 @@ export declare class RecoveryManager extends EventEmitter implements IRecoveryMa
     /**
      * Get recovery statistics
      */
-    getStats(): import("./types").RecoveryStats;
+    getStats(): import("./types.js").RecoveryStats;
     /**
      * Get checkpoints for a specific operation
      */

@@ -8,7 +8,7 @@ import { EventEmitter } from 'events';
 import type {
   StateCheckpoint,
   IStateManager
-} from './types';
+} from './types.js';
 
 /**
  * State manager implementation

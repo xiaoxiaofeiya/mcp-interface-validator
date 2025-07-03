@@ -6,8 +6,8 @@
  */
 import { EventEmitter } from 'events';
 import * as crypto from 'crypto';
-import { GitProvider } from './providers/git-provider';
-import { FileSystemProvider } from './providers/filesystem-provider';
+import { GitProvider } from './providers/git-provider.js';
+import { FileSystemProvider } from './providers/filesystem-provider.js';
 /**
  * Main Version Control Manager
  */
@@ -382,7 +382,7 @@ export class VersionControlManager extends EventEmitter {
     }
 }
 // Export types and providers
-export * from './types';
-export { GitProvider } from './providers/git-provider';
-export { FileSystemProvider } from './providers/filesystem-provider';
+export * from './types.js';
+export { GitProvider } from './providers/git-provider.js';
+export { FileSystemProvider } from './providers/filesystem-provider.js';
 //# sourceMappingURL=index.js.map

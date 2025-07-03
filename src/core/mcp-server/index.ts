@@ -19,14 +19,14 @@ import cors from 'cors';
 import { EventEmitter } from 'events';
 
 // Core validation engine integration
-import { ValidationEngine } from '../validation/index';
-import type { ValidationRequest } from '../validation/index';
-import { ConfigManager } from '../../utils/config/index';
-import { Logger } from '../../utils/logger/index';
+import { ValidationEngine } from '../validation/index.js';
+import type { ValidationRequest } from '../validation/index.js';
+import { ConfigManager } from '../../utils/config/index.js';
+import { Logger } from '../../utils/logger/index.js';
 
 // Intelligent constraints system integration
-import { IntelligentConstraintSystem } from '../intelligent-constraints/index';
-import { IntelligentContextAnalyzer } from '../intelligent-context/index';
+import { IntelligentConstraintSystem } from '../intelligent-constraints/index.js';
+import { IntelligentContextAnalyzer } from '../intelligent-context/index.js';
 
 /**
  * MCP Server Configuration

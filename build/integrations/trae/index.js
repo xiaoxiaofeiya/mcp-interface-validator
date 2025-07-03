@@ -3,7 +3,7 @@
  *
  * Integration adapter for Trae AI development tool
  */
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class TraeIntegration {
     name = 'trae';
     isEnabled;

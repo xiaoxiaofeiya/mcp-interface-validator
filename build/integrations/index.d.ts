@@ -3,8 +3,8 @@
  *
  * Manages integrations with various AI development tools
  */
-import { Logger } from '../utils/logger/index';
-import { ConfigManager } from '../utils/config/index';
+import { Logger } from '../utils/logger/index.js';
+import { ConfigManager } from '../utils/config/index.js';
 export interface Integration {
     name: string;
     isEnabled: boolean;

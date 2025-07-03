@@ -3,7 +3,7 @@
  *
  * Abstract interface for different database implementations
  */
-import type { ValidationHistoryEntry, HistoryQuery, HistoryQueryResult, HistoryStatistics, CleanupOptions, CleanupResult, DatabaseConfig } from '../types';
+import type { ValidationHistoryEntry, HistoryQuery, HistoryQueryResult, HistoryStatistics, CleanupOptions, CleanupResult, DatabaseConfig } from '../types.js';
 /**
  * Database interface for validation history storage
  */

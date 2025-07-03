@@ -4,7 +4,7 @@
  * Implements circuit breaker pattern to prevent cascading failures
  */
 import { EventEmitter } from 'events';
-import { CircuitBreakerState } from './types';
+import { CircuitBreakerState } from './types.js';
 /**
  * Circuit breaker implementation
  */

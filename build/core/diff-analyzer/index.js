@@ -4,8 +4,8 @@
  * Compares frontend and backend code to detect API interface mismatches,
  * including endpoints, parameters, response types, and other inconsistencies.
  */
-import { Logger } from '../../utils/logger/index';
-import { CodeParser } from '../code-parser/index';
+import { Logger } from '../../utils/logger/index.js';
+import { CodeParser } from '../code-parser/index.js';
 export class DiffAnalyzer {
     logger;
     codeParser;

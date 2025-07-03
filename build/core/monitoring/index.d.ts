@@ -3,8 +3,8 @@
  *
  * Monitors file system changes and triggers validation
  */
-import { Logger } from '../../utils/logger/index';
-import type { MonitoringConfig } from '../../utils/config/index';
+import { Logger } from '../../utils/logger/index.js';
+import type { MonitoringConfig } from '../../utils/config/index.js';
 export type FileChangeHandler = (filePath: string, content: string) => Promise<void>;
 export interface FileChangeEvent {
     type: 'add' | 'change' | 'unlink';

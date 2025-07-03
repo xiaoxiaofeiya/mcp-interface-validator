@@ -3,9 +3,9 @@
  *
  * Handles exporting validation history data in various formats
  */
-import { Logger } from '../../utils/logger/index';
-import type { ValidationHistoryEntry, ExportOptions, ExportResult } from './types';
-import type { IHistoryDatabase } from './database/interface';
+import { Logger } from '../../utils/logger/index.js';
+import type { ValidationHistoryEntry, ExportOptions, ExportResult } from './types.js';
+import type { IHistoryDatabase } from './database/interface.js';
 /**
  * Export manager for validation history
  */

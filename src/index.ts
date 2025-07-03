@@ -15,11 +15,11 @@ import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { CallToolRequestSchema, ListToolsRequestSchema } from '@modelcontextprotocol/sdk/types.js';
 
-import { Logger } from './utils/logger/index';
-import { ConfigManager } from './utils/config/index';
-import { ValidationEngine } from './core/validation/index';
-import { IntelligentConstraintSystem } from './core/intelligent-constraints/index';
-import { IntelligentContextAnalyzer } from './core/intelligent-context/index';
+import { Logger } from './utils/logger/index.js';
+import { ConfigManager } from './utils/config/index.js';
+import { ValidationEngine } from './core/validation/index.js';
+import { IntelligentConstraintSystem } from './core/intelligent-constraints/index.js';
+import { IntelligentContextAnalyzer } from './core/intelligent-context/index.js';
 // import { IntegrationManager } from './integrations/index.js';
 // import { SecurityManager } from './core/security/index.js';
 

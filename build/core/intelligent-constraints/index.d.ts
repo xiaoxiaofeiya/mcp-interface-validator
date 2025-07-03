@@ -1,13 +1,13 @@
 /**
  * 智能约束系统主入口
  */
-export * from './types';
-export * from './constraint-manager';
-export * from './constraint-template-engine';
-export * from './instruction-detector';
-export * from './instruction-enhancer';
-import { IntelligentContextAnalyzer } from '../intelligent-context';
-import type { ConstraintConfig, GlobalConstraintConfig, ProjectContext, ConstraintApplicationResult, ConstraintCommand } from './types';
+export * from './types.js';
+export * from './constraint-manager.js';
+export * from './constraint-template-engine.js';
+export * from './instruction-detector.js';
+export * from './instruction-enhancer.js';
+import { IntelligentContextAnalyzer } from '../intelligent-context/index.js';
+import type { ConstraintConfig, GlobalConstraintConfig, ProjectContext, ConstraintApplicationResult, ConstraintCommand } from './types.js';
 /**
  * 智能约束系统
  */
@@ -56,7 +56,7 @@ export declare class IntelligentConstraintSystem {
     /**
      * 获取可用模板
      */
-    getAvailableTemplates(): import("./types").TemplateInfo[];
+    getAvailableTemplates(): import("./types.js").TemplateInfo[];
     /**
      * 注册自定义模板
      */

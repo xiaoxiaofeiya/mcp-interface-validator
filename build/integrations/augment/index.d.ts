@@ -3,8 +3,8 @@
  *
  * Integration adapter for Augment AI development platform
  */
-import { Logger } from '../../utils/logger/index';
-import type { Integration, IntegrationStatus } from '../index';
+import { Logger } from '../../utils/logger/index.js';
+import type { Integration, IntegrationStatus } from '../index.js';
 export interface AugmentConfig {
     enabled: boolean;
     configPath?: string;

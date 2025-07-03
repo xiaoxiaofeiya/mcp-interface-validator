@@ -12,8 +12,8 @@ import type {
   PluginDiscoveryResult, 
   PluginManifest, 
   PluginLoaderConfig 
-} from './types';
-import { Logger } from '../../utils/logger/index';
+} from './types.js';
+import { Logger } from '../../utils/logger/index.js';
 
 /**
  * Plugin discovery service

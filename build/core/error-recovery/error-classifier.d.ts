@@ -3,8 +3,8 @@
  *
  * Classifies errors by category, severity, and recovery recommendations
  */
-import type { ErrorClassification, IErrorClassifier } from './types';
-import { ErrorCategory, ErrorSeverity } from './types';
+import type { ErrorClassification, IErrorClassifier } from './types.js';
+import { ErrorCategory, ErrorSeverity } from './types.js';
 /**
  * Classification rule
  */

@@ -9,8 +9,8 @@ import type {
   CircuitBreakerConfig,
   RecoveryOperation,
   ICircuitBreaker
-} from './types';
-import { CircuitBreakerState } from './types';
+} from './types.js';
+import { CircuitBreakerState } from './types.js';
 
 /**
  * Circuit breaker call result

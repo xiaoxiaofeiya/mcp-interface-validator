@@ -4,13 +4,13 @@
  * Generates code examples in multiple programming languages for API operations
  */
 
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 import type {
   CodeExampleConfig,
   OperationData,
   CodeExample,
   DocumentationError
-} from './types';
+} from './types.js';
 
 export class CodeExampleGenerator {
   private logger: Logger;

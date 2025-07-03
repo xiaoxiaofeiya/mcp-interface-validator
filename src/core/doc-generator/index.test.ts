@@ -2,10 +2,10 @@
  * Tests for API Documentation Generator
  */
 
-import { DocumentationGenerator } from './index';
-import { TemplateManager } from './template-manager';
-import { CodeExampleGenerator } from './code-example-generator';
-import type { DocumentationConfig, OperationData, CodeExampleConfig } from './types';
+import { DocumentationGenerator } from './index.js';
+import { TemplateManager } from './template-manager.js';
+import { CodeExampleGenerator } from './code-example-generator.js';
+import type { DocumentationConfig, OperationData, CodeExampleConfig } from './types.js';
 import { writeFileSync, mkdirSync, existsSync, rmSync } from 'fs';
 import { join } from 'path';
 

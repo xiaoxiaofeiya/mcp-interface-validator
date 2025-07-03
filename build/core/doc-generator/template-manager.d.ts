@@ -3,7 +3,7 @@
  *
  * Manages template loading, compilation, and rendering for documentation generation
  */
-import type { TemplateConfig, TemplateData } from './types';
+import type { TemplateConfig, TemplateData } from './types.js';
 export declare class TemplateManager {
     private logger;
     private handlebars;

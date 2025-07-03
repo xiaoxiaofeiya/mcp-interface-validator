@@ -4,9 +4,9 @@
  * Handles automated cleanup of old validation history entries
  */
 import { EventEmitter } from 'events';
-import { Logger } from '../../utils/logger/index';
-import type { CleanupOptions, CleanupResult, HistoryConfig } from './types';
-import type { IHistoryDatabase } from './database/interface';
+import { Logger } from '../../utils/logger/index.js';
+import type { CleanupOptions, CleanupResult, HistoryConfig } from './types.js';
+import type { IHistoryDatabase } from './database/interface.js';
 /**
  * Cleanup manager for validation history
  */

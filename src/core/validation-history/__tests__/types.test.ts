@@ -15,8 +15,8 @@ import type {
   CleanupResult,
   DatabaseConfig,
   HistoryConfig
-} from '../types';
-import type { ValidationResult } from '../../validation/index';
+} from '../types.js';
+import type { ValidationResult } from '../../validation/index.js';
 
 describe('Validation History Types', () => {
   describe('ValidationHistoryEntry', () => {

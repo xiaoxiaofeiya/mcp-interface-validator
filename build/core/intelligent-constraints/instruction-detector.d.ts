@@ -1,7 +1,7 @@
 /**
  * 指令检测器 - 检测和解析约束指令
  */
-import type { ConstraintCommand, InstructionDetectionResult } from './types';
+import type { ConstraintCommand, InstructionDetectionResult } from './types.js';
 /**
  * 指令检测器接口
  */

@@ -1,8 +1,8 @@
 /**
  * 约束模板引擎 - 生成约束提示词模板
  */
-import type { ConstraintTemplate, TemplateInfo, ConstraintConfig, ProjectContext } from './types';
-import type { UserIntent } from '../intelligent-context/types';
+import type { ConstraintTemplate, TemplateInfo, ConstraintConfig, ProjectContext } from './types.js';
+import type { UserIntent } from '../intelligent-context/types.js';
 /**
  * 约束模板引擎接口
  */

@@ -8,7 +8,7 @@ import { readFileSync, existsSync } from 'fs';
 import { resolve, extname } from 'path';
 import $RefParser from '@apidevtools/json-schema-ref-parser';
 import { parse as parseYaml } from 'yaml';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class SpecParser {
     logger;
     // private _config: ValidationConfig;

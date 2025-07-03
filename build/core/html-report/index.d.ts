@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events';
-import type { Logger } from '../../utils/logger';
-import type { HtmlReportConfig, ReportData, ExportOptions, ValidationSummary, PerformanceMetrics } from './types';
+import type { Logger } from '../../utils/logger/index.js';
+import type { HtmlReportConfig, ReportData, ExportOptions, ValidationSummary, PerformanceMetrics } from './types.js';
 /**
  * HTML Report Generator
  *

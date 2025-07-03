@@ -4,8 +4,8 @@
  * Handles ambiguous user instructions and provides intelligent suggestions
  * for API interface generation and validation.
  */
-import type { UserIntent } from './types';
-export type { UserIntent } from './types';
+import type { UserIntent } from './types.js';
+export type { UserIntent } from './types.js';
 export interface ContextSuggestion {
     suggestedEndpoints: string[];
     suggestedSchemas: any;

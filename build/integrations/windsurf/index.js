@@ -3,7 +3,7 @@
  *
  * Integration adapter for Windsurf AI IDE
  */
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class WindsurfIntegration {
     name = 'windsurf';
     isEnabled;

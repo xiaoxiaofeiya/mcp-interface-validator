@@ -8,8 +8,8 @@ import { watch, FSWatcher } from 'chokidar';
 import { readFileSync, statSync } from 'fs';
 import { resolve } from 'path';
 
-import { Logger } from '../../utils/logger/index';
-import type { MonitoringConfig } from '../../utils/config/index';
+import { Logger } from '../../utils/logger/index.js';
+import type { MonitoringConfig } from '../../utils/config/index.js';
 
 export type FileChangeHandler = (filePath: string, content: string) => Promise<void>;
 

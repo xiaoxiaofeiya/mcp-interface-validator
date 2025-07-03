@@ -6,7 +6,7 @@
 import { readFileSync, existsSync } from 'fs';
 import { join, resolve } from 'path';
 import Handlebars from 'handlebars';
-import { Logger } from '../../utils/logger/index';
+import { Logger } from '../../utils/logger/index.js';
 export class TemplateManager {
     logger;
     handlebars;

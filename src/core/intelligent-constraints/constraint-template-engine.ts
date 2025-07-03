@@ -2,14 +2,14 @@
  * 约束模板引擎 - 生成约束提示词模板
  */
 
-import { Logger } from '../../utils/logger';
+import { Logger } from '../../utils/logger/index.js';
 import type {
   ConstraintTemplate,
   TemplateInfo,
   ConstraintConfig,
   ProjectContext
-} from './types';
-import type { UserIntent } from '../intelligent-context/types';
+} from './types.js';
+import type { UserIntent } from '../intelligent-context/types.js';
 
 /**
  * 约束模板引擎接口

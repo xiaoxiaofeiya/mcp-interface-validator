@@ -2,9 +2,9 @@
  * Tests for Difference Analyzer
  */
 
-import { DiffAnalyzer, type DiffAnalysisRequest } from './index';
-import { Logger } from '../../utils/logger/index';
-import type { ValidationConfig } from '../../utils/config/index';
+import { DiffAnalyzer, type DiffAnalysisRequest } from './index.js';
+import { Logger } from '../../utils/logger/index.js';
+import type { ValidationConfig } from '../../utils/config/index.js';
 
 describe('DiffAnalyzer', () => {
   let analyzer: DiffAnalyzer;

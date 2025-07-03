@@ -7,9 +7,9 @@
 
 import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { resolve, dirname } from 'path';
-import { Logger } from '../../utils/logger/index';
-import type { ValidationConfig } from '../../utils/config/index';
-import type { ParsedSpec } from '../parser/index';
+import { Logger } from '../../utils/logger/index.js';
+import type { ValidationConfig } from '../../utils/config/index.js';
+import type { ParsedSpec } from '../parser/index.js';
 
 export interface ContextTemplate {
   id: string;

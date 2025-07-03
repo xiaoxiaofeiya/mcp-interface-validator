@@ -1,7 +1,7 @@
 /**
  * 约束管理器 - 管理约束状态和会话
  */
-import type { ConstraintConfig, GlobalConstraintConfig, SessionState, ConstraintStats, ProjectConstraintConfig } from './types';
+import type { ConstraintConfig, GlobalConstraintConfig, SessionState, ConstraintStats, ProjectConstraintConfig } from './types.js';
 /**
  * 配置文件格式
  */

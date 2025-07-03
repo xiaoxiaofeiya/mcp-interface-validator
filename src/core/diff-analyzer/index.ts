@@ -5,10 +5,10 @@
  * including endpoints, parameters, response types, and other inconsistencies.
  */
 
-import { Logger } from '../../utils/logger/index';
-import { CodeParser, type ParsedCode, type ApiEndpoint } from '../code-parser/index';
-// import { SchemaValidator } from '../schema/index';
-import type { ValidationConfig } from '../../utils/config/index';
+import { Logger } from '../../utils/logger/index.js';
+import { CodeParser, type ParsedCode, type ApiEndpoint } from '../code-parser/index.js';
+// import { SchemaValidator } from '../schema/index.js';
+import type { ValidationConfig } from '../../utils/config/index.js';
 
 export interface DiffAnalysisRequest {
   frontendCode: string;

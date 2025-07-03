@@ -2,14 +2,14 @@
  * Tests for Cleanup Manager
  */
 
-import { CleanupManager, CleanupPresets, createCleanupManager } from '../cleanup-manager';
-import { Logger } from '../../../utils/logger/index';
+import { CleanupManager, CleanupPresets, createCleanupManager } from '../cleanup-manager.js';
+import { Logger } from '../../../utils/logger/index.js';
 import type {
   CleanupOptions,
   CleanupResult,
   HistoryConfig
-} from '../types';
-import type { IHistoryDatabase } from '../database/interface';
+} from '../types.js';
+import type { IHistoryDatabase } from '../database/interface.js';
 
 // Mock database implementation
 class MockDatabase implements Partial<IHistoryDatabase> {

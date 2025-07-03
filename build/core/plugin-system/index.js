@@ -4,12 +4,12 @@
  * Exports all plugin system components and provides factory functions
  */
 // Core classes
-export { BasePlugin, SimplePlugin } from './base-plugin';
-export { PluginDiscovery } from './plugin-discovery';
-export { PluginLoader } from './plugin-loader';
-export { PluginManager } from './plugin-manager';
-import { PluginManager } from './plugin-manager';
-import { Logger } from '../../utils/logger/index';
+export { BasePlugin, SimplePlugin } from './base-plugin.js';
+export { PluginDiscovery } from './plugin-discovery.js';
+export { PluginLoader } from './plugin-loader.js';
+export { PluginManager } from './plugin-manager.js';
+import { PluginManager } from './plugin-manager.js';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Default plugin system configuration
  */

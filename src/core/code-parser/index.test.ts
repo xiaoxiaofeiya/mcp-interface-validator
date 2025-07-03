@@ -2,7 +2,7 @@
  * Tests for Multi-Language Code Parser Module
  */
 
-import { CodeParser } from './index';
+import { CodeParser } from './index.js';
 import { writeFileSync, unlinkSync } from 'fs';
 import { join } from 'path';
 
@@ -240,9 +240,9 @@ public class Calculator {
     it('should parse imports and exports', async () => {
       const content = `
         import { Component, OnInit } from '@angular/core';
-        import { UserService } from './user.service';
-        import * as utils from '../utils';
-        import defaultExport from './default';
+        import { UserService } from './user.service.js';
+        import * as utils from '../utils.js';
+        import defaultExport from './default.js';
         
         export class MyComponent implements OnInit {
           constructor(private userService: UserService) {}

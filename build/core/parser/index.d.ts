@@ -5,8 +5,8 @@
  * for OpenAPI 3.0/3.1 and Swagger 2.0 specifications
  */
 import type { OpenAPIV3, OpenAPIV3_1 } from 'openapi-types';
-import { Logger } from '../../utils/logger/index';
-import type { ValidationConfig } from '../../utils/config/index';
+import { Logger } from '../../utils/logger/index.js';
+import type { ValidationConfig } from '../../utils/config/index.js';
 export type OpenAPISpec = OpenAPIV3.Document | OpenAPIV3_1.Document;
 export type SwaggerSpec = any;
 export interface ParsedSpec {

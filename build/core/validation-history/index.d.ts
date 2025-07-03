@@ -3,17 +3,17 @@
  *
  * Main entry point for the validation history system
  */
-export { HistoryManager } from './history-manager';
-export { QueryBuilder, createQuery, QueryPresets } from './query-builder';
-export { ExportManager } from './export-manager';
-export { CleanupManager, CleanupPresets, createCleanupManager } from './cleanup-manager';
-export { SQLiteDatabase } from './database/sqlite-database';
-export type { IHistoryDatabase, DatabaseHealth, ITransaction, IQueryBuilder, DatabaseEvents, ConnectionOptions, IndexConfig, SchemaConfig } from './database/interface';
-export type { ValidationHistoryEntry, ValidationContext, ValidationMetrics, HistoryQuery, HistoryQueryResult, HistoryStatistics, ExportOptions, ExportResult, CleanupOptions, CleanupResult, DatabaseConfig, HistoryConfig } from './types';
-import type { HistoryConfig, ValidationContext, ValidationMetrics, HistoryStatistics } from './types';
-import { HistoryManager } from './history-manager';
-export type { ValidationTrend, HistoryManagerEvents } from './history-manager';
-export type { CleanupStats, CleanupEstimate, CleanupEvents } from './cleanup-manager';
+export { HistoryManager } from './history-manager.js';
+export { QueryBuilder, createQuery, QueryPresets } from './query-builder.js';
+export { ExportManager } from './export-manager.js';
+export { CleanupManager, CleanupPresets, createCleanupManager } from './cleanup-manager.js';
+export { SQLiteDatabase } from './database/sqlite-database.js';
+export type { IHistoryDatabase, DatabaseHealth, ITransaction, IQueryBuilder, DatabaseEvents, ConnectionOptions, IndexConfig, SchemaConfig } from './database/interface.js';
+export type { ValidationHistoryEntry, ValidationContext, ValidationMetrics, HistoryQuery, HistoryQueryResult, HistoryStatistics, ExportOptions, ExportResult, CleanupOptions, CleanupResult, DatabaseConfig, HistoryConfig } from './types.js';
+import type { HistoryConfig, ValidationContext, ValidationMetrics, HistoryStatistics } from './types.js';
+import { HistoryManager } from './history-manager.js';
+export type { ValidationTrend, HistoryManagerEvents } from './history-manager.js';
+export type { CleanupStats, CleanupEstimate, CleanupEvents } from './cleanup-manager.js';
 /**
  * Default configuration for validation history system
  */

@@ -8,7 +8,7 @@
     "mcp-interface-validator": "./build/index.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node fix-imports.js",
     "start": "node build/index.js",
     "dev": "tsc --watch",
     "test": "jest",

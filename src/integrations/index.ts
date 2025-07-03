@@ -4,12 +4,12 @@
  * Manages integrations with various AI development tools
  */
 
-import { Logger } from '../utils/logger/index';
-import { ConfigManager, type IntegrationConfig } from '../utils/config/index';
-import { CursorIntegration } from './cursor/index';
-import { WindsurfIntegration } from './windsurf/index';
-import { AugmentIntegration } from './augment/index';
-import { TraeIntegration } from './trae/index';
+import { Logger } from '../utils/logger/index.js';
+import { ConfigManager, type IntegrationConfig } from '../utils/config/index.js';
+import { CursorIntegration } from './cursor/index.js';
+import { WindsurfIntegration } from './windsurf/index.js';
+import { AugmentIntegration } from './augment/index.js';
+import { TraeIntegration } from './trae/index.js';
 
 export interface Integration {
   name: string;

@@ -18,8 +18,8 @@ import type {
   HookType,
   HookHandler,
   HookContext
-} from './types';
-import { Logger } from '../../utils/logger/index';
+} from './types.js';
+import { Logger } from '../../utils/logger/index.js';
 
 /**
  * Plugin loader implementation

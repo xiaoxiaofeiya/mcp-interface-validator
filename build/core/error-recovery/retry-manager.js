@@ -3,7 +3,7 @@
  *
  * Implements various retry strategies with configurable backoff algorithms
  */
-import { RetryStrategy, ErrorCategory } from './types';
+import { RetryStrategy, ErrorCategory } from './types.js';
 /**
  * Retry manager implementation
  */

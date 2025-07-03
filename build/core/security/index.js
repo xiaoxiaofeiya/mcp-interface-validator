@@ -10,7 +10,7 @@
  */
 import { EventEmitter } from 'events';
 import { createCipheriv, createDecipheriv, randomBytes, pbkdf2Sync } from 'crypto';
-import { Logger } from '../../utils/logger';
+import { Logger } from '../../utils/logger/index.js';
 /**
  * Main Security Manager Class
  */

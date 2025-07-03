@@ -4,13 +4,13 @@
  * Main entry point for the validation history system
  */
 // Core classes
-export { HistoryManager } from './history-manager';
-export { QueryBuilder, createQuery, QueryPresets } from './query-builder';
-export { ExportManager } from './export-manager';
-export { CleanupManager, CleanupPresets, createCleanupManager } from './cleanup-manager';
+export { HistoryManager } from './history-manager.js';
+export { QueryBuilder, createQuery, QueryPresets } from './query-builder.js';
+export { ExportManager } from './export-manager.js';
+export { CleanupManager, CleanupPresets, createCleanupManager } from './cleanup-manager.js';
 // Database implementations
-export { SQLiteDatabase } from './database/sqlite-database';
-import { HistoryManager } from './history-manager';
+export { SQLiteDatabase } from './database/sqlite-database.js';
+import { HistoryManager } from './history-manager.js';
 /**
  * Default configuration for validation history system
  */

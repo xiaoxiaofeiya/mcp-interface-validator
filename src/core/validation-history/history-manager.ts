@@ -6,11 +6,11 @@
 
 import { EventEmitter } from 'events';
 import * as crypto from 'crypto';
-import { Logger } from '../../utils/logger/index';
-import { SQLiteDatabase } from './database/sqlite-database';
-import { ExportManager } from './export-manager';
-import { CleanupManager } from './cleanup-manager';
-import { QueryBuilder } from './query-builder';
+import { Logger } from '../../utils/logger/index.js';
+import { SQLiteDatabase } from './database/sqlite-database.js';
+import { ExportManager } from './export-manager.js';
+import { CleanupManager } from './cleanup-manager.js';
+import { QueryBuilder } from './query-builder.js';
 import type {
   ValidationHistoryEntry,
   HistoryQuery,
@@ -23,9 +23,9 @@ import type {
   ExportResult,
   CleanupOptions,
   CleanupResult
-} from './types';
-import type { ValidationResult } from '../validation/index';
-import type { IHistoryDatabase, DatabaseHealth } from './database/interface';
+} from './types.js';
+import type { ValidationResult } from '../validation/index.js';
+import type { IHistoryDatabase, DatabaseHealth } from './database/interface.js';
 
 /**
  * Main history manager class

@@ -12,8 +12,8 @@ import addFormats from 'ajv-formats';
 import { parse as parseYaml } from 'yaml';
 import type { OpenAPIV3, OpenAPIV3_1 } from 'openapi-types';
 
-import { Logger } from '../../utils/logger/index';
-import type { ValidationConfig } from '../../utils/config/index';
+import { Logger } from '../../utils/logger/index.js';
+import type { ValidationConfig } from '../../utils/config/index.js';
 
 export type OpenAPISpec = OpenAPIV3.Document | OpenAPIV3_1.Document;
 

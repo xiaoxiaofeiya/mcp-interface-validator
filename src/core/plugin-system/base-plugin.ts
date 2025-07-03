@@ -14,7 +14,7 @@ import type {
   PluginHealth,
   HookType,
   HookHandler
-} from './types';
+} from './types.js';
 
 /**
  * Abstract base plugin class

@@ -4,8 +4,8 @@
  * Implements circuit breaker pattern to prevent cascading failures
  */
 import { EventEmitter } from 'events';
-import type { CircuitBreakerConfig, RecoveryOperation, ICircuitBreaker } from './types';
-import { CircuitBreakerState } from './types';
+import type { CircuitBreakerConfig, RecoveryOperation, ICircuitBreaker } from './types.js';
+import { CircuitBreakerState } from './types.js';
 /**
  * Circuit breaker implementation
  */
