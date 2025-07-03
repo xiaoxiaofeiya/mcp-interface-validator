@@ -9,7 +9,7 @@ AI-generated frontend and backend code may have interface inconsistency issues:
 
 - ❌ Frontend API calls don't match backend implementations
 - ❌ Inconsistent data structure definitions causing runtime errors
-- ❌ Lack of unified interface specifications, making team collaboration difficult
+- ❌ Lack of unified interface specifications
 - ❌ Manual interface consistency checking is inefficient
 
 ## ✅ With MCP Interface Validator
