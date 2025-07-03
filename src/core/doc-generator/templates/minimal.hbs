@@ -1,0 +1,48 @@
+# {{spec.info.title}}
+
+{{#if spec.info.description}}
+{{spec.info.description}}
+{{/if}}
+
+Version: {{spec.info.version}}
+
+## Endpoints
+
+{{#each operations}}
+### {{uppercase method}} {{path}}
+
+{{#if summary}}
+{{summary}}
+{{/if}}
+
+{{#if parameters}}
+**Parameters:**
+{{#each parameters}}
+- `{{name}}` ({{in}}) - {{description}}{{#if required}} *Required*{{/if}}
+{{/each}}
+{{/if}}
+
+{{#if requestBody}}
+**Request Body:** {{#if requestBody.required}}Required{{else}}Optional{{/if}}
+{{/if}}
+
+**Responses:**
+{{#each responses}}
+- {{statusCode}}: {{description}}
+{{/each}}
+
+{{/each}}
+
+{{#if schemas}}
+## Models
+
+{{#each schemas}}
+### {{name}}
+{{#if description}}{{description}}{{/if}}
+
+```json
+{{formatJson schema}}
+```
+
+{{/each}}
+{{/if}}

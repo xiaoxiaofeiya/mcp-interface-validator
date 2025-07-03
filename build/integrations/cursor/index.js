@@ -1,0 +1,104 @@
+/**
+ * Cursor Integration
+ *
+ * Integration adapter for Cursor AI IDE
+ */
+import { Logger } from '../../utils/logger/index';
+export class CursorIntegration {
+    name = 'cursor';
+    isEnabled;
+    logger;
+    // @ts-ignore - TODO: Use config for Cursor-specific settings
+    _config;
+    connected = false;
+    errorCount = 0;
+    lastActivity;
+    constructor(config, logger) {
+        this._config = config;
+        this.isEnabled = config.enabled;
+        this.logger = logger;
+    }
+    /**
+     * Initialize Cursor integration
+     */
+    async initialize() {
+        try {
+            this.logger.info('Initializing Cursor integration...');
+            // TODO: Implement Cursor-specific initialization
+            // This might involve:
+            // - Setting up communication channels
+            // - Reading Cursor configuration
+            // - Establishing connection to Cursor extension API
+            this.connected = true;
+            this.lastActivity = new Date().toISOString();
+            this.logger.info('Cursor integration initialized successfully');
+        }
+        catch (error) {
+            this.errorCount++;
+            this.logger.error('Failed to initialize Cursor integration:', error);
+            throw error;
+        }
+    }
+    /**
+     * Send validation result to Cursor
+     */
+    async sendValidationResult(result) {
+        if (!this.isEnabled || !this.connected) {
+            return;
+        }
+        try {
+            this.logger.debug('Sending validation result to Cursor', {
+                isValid: result.isValid,
+                errorCount: result.errors?.length || 0
+            });
+            // TODO: Implement actual communication with Cursor
+            // This might involve:
+            // - Sending results via IPC
+            // - Writing to a shared file
+            // - Using Cursor's extension API
+            // - WebSocket communication
+            this.lastActivity = new Date().toISOString();
+            this.logger.debug('Validation result sent to Cursor successfully');
+        }
+        catch (error) {
+            this.errorCount++;
+            this.logger.error('Failed to send validation result to Cursor:', error);
+            throw error;
+        }
+    }
+    /**
+     * Get integration status
+     */
+    getStatus() {
+        return {
+            name: this.name,
+            enabled: this.isEnabled,
+            connected: this.connected,
+            lastActivity: this.lastActivity,
+            errorCount: this.errorCount
+        };
+    }
+    /**
+     * Enable the integration
+     */
+    enable() {
+        this.isEnabled = true;
+        this.logger.info('Cursor integration enabled');
+    }
+    /**
+     * Disable the integration
+     */
+    disable() {
+        this.isEnabled = false;
+        this.connected = false;
+        this.logger.info('Cursor integration disabled');
+    }
+    /**
+     * Reset error count
+     */
+    resetErrorCount() {
+        this.errorCount = 0;
+        this.logger.debug('Cursor integration error count reset');
+    }
+}
+//# sourceMappingURL=index.js.map
