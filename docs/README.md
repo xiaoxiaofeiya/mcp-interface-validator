@@ -75,7 +75,8 @@ npm install -g https://github.com/xiaoxiaofeiya/mcp-interface-validator.git
 
 ### Configure in Augment
 
-```{
+```
+{
   "mcpServers": {
     "interface-validator": {
       "command": "mcp-interface-validator",
