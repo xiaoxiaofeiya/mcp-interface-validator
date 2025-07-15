@@ -9,7 +9,7 @@ AI-generated frontend and backend code may have interface inconsistency issues:
 
 - ❌ Frontend API calls don't match backend implementations
 - ❌ Inconsistent data structure definitions causing runtime errors
-- ❌ Lack of unified interface specifications, making team collaboration difficult
+- ❌ Lack of unified interface specifications
 - ❌ Manual interface consistency checking is inefficient
 
 ## ✅ With MCP Interface Validator
@@ -73,16 +73,33 @@ npm install -g https://github.com/xiaoxiaofeiya/mcp-interface-validator.git
 
 ## 📦 Configuration Setup
 
-### Configure in Cursor
+### Configure in Augment
 
-Add the following configuration to `~/.cursor/mcp.json` file:
-
-```json
+```
 {
   "mcpServers": {
     "interface-validator": {
       "command": "mcp-interface-validator",
-      "args": []
+      "transport": "stdio",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "autoStart": true
+    }
+  }
+}
+```
+
+### Configure in Cursor
+
+Add the following configuration to `~/.cursor/mcp.json` file:
+
+```{
+  "mcpServers": {
+    "interface-validator": {
+      "command": "mcp-interface-validator",
+      "args": ["--stdio"],
+      "env": {}
     }
   }
 }
@@ -90,12 +107,15 @@ Add the following configuration to `~/.cursor/mcp.json` file:
 
 ### Configure in Windsurf
 
-```json
-{
-  "mcpServers": {
-    "interface-validator": {
-      "command": "mcp-interface-validator",
-      "args": []
+```{
+  "extensions": {
+    "mcp": {
+      "servers": {
+        "interface-validator": {
+          "command": "mcp-interface-validator",
+          "transport": "stdio"
+        }
+      }
     }
   }
 }
@@ -105,26 +125,30 @@ Add the following configuration to `~/.cursor/mcp.json` file:
 
 Add the following to `claude_desktop_config.json`:
 
-```json
-{
+```{
   "mcpServers": {
     "interface-validator": {
       "command": "mcp-interface-validator",
-      "args": []
+      "args": [],
+      "env": {}
     }
   }
 }
 ```
 
-### Configure in VSCode
+### Configure in Trae
 
-```json
-{
-  "servers": {
-    "interface-validator": {
-      "type": "stdio",
-      "command": "mcp-interface-validator",
-      "args": []
+Add the following to `trae/config.json`:
+
+```{
+  "integrations": {
+    "mcp": {
+      "servers": {
+        "interface-validator": {
+          "command": "mcp-interface-validator",
+          "transport": "stdio"
+        }
+      }
     }
   }
 }
