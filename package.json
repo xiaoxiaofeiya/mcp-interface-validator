@@ -21,7 +21,12 @@
     "lint:fix": "eslint src/**/*.ts --fix",
     "clean": "rimraf build",
     "prepare": "npm run build",
-    "prepublishOnly": "npm run clean && npm run build && npm run test:all"
+    "prepublishOnly": "npm run clean && npm run build",
+    "pre-publish": "node scripts/pre-publish-check.cjs",
+    "publish:check": "node scripts/publish.js",
+    "publish:simple": "node scripts/publish-simple.cjs",
+    "install:global": "node scripts/install-global.js",
+    "postinstall": "echo '✅ MCP Interface Validator installed! Run npm run install:global for global setup.'"
   },
   "keywords": [
     "mcp",

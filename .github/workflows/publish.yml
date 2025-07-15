@@ -1,0 +1,77 @@
+name: Publish to NPM
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to publish'
+        required: true
+        default: '1.0.0'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        registry-url: 'https://registry.npmjs.org'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run pre-publish checks
+      run: npm run pre-publish
+      
+    - name: Build project
+      run: npm run build
+      
+    - name: Run tests
+      run: npm run test:all
+      
+    - name: Publish to NPM
+      run: npm publish --access public
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        
+    - name: Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          ## 🚀 MCP Interface Validator Release
+          
+          ### 📦 Installation
+          ```bash
+          npm install -g mcp-interface-validator
+          ```
+          
+          ### 🔧 Quick Setup
+          ```bash
+          npm run install:global
+          ```
+          
+          ### 📚 Documentation
+          - [User Guide](https://github.com/xiaoxiaofeiya/mcp-interface-validator/blob/main/USER_README.md)
+          - [Installation Guide](https://github.com/xiaoxiaofeiya/mcp-interface-validator/blob/main/INSTALLATION.md)
+          - [API Reference](https://github.com/xiaoxiaofeiya/mcp-interface-validator/tree/main/docs/api)
+          
+          ### 🎯 What's New
+          - Complete MCP interface validation system
+          - Intelligent constraint engine with `.use interface` support
+          - Multi AI tool compatibility (Claude, Cursor, Windsurf, Trae, Augment)
+          - Real-time validation and monitoring
+          - Comprehensive documentation and examples
+        draft: false
+        prerelease: false

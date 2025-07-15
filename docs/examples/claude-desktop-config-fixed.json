@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "interface-validator": {
+      "command": "mcp-interface-validator",
+      "transport": "stdio",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "autoStart": true
+    }
+  }
+}
